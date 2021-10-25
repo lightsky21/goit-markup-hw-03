@@ -23,6 +23,40 @@ body {
   list-style: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -41,6 +75,8 @@ body {
 }
 .btn {
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .section-title {
   font-size: 36px;
@@ -176,12 +212,17 @@ body {
 
 /* -----------------our-projects section----------------------- */
 .filter-btn {
+  display: inline-block;
+  min-width: 73px;
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--secondary-title-color);
   background-color: var(--team-background-color);
 }
