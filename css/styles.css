@@ -55,7 +55,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .section {
@@ -111,7 +110,7 @@ img {
 
 /*------------------- header---------------------------------- */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav {
   display: flex;
@@ -125,7 +124,8 @@ img {
 .site-nav-list {
   display: flex;
 }
-.site-nav-list-item:not(:last-child) {
+.site-nav-list-item:not(:last-child),
+.header-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -151,9 +151,6 @@ img {
 }
 .header-contacts {
   display: flex;
-}
-.header-contacts-item:not(:last-child) {
-  margin-right: 50px;
 }
 .header-contacts-link {
   font-weight: 500;
@@ -182,8 +179,6 @@ img {
   color: var(--primary-title-color);
 }
 .footer-contacts-link {
-  display: inline-block;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -237,9 +232,13 @@ img {
 }
 .peculiarities-item {
   width: 270px;
-}
-.peculiarities-item:not(:last-child) {
   margin-right: 30px;
+}
+.peculiarities-item:last-child,
+.filter-btn:last-child,
+.our-business-item:last-child,
+.team-item:last-child {
+  margin-right: 0;
 }
 .peculiarities-title {
   margin-bottom: 10px;
@@ -268,9 +267,7 @@ img {
   width: 370px;
   margin-right: 30px;
 }
-.our-business-item:last-child {
-  margin-right: 0;
-}
+
 /* --------------team section-------------------------------- */
 
 .team {
@@ -283,9 +280,7 @@ img {
   width: 270px;
   margin-right: 30px;
 }
-.team-item:last-child {
-  margin-right: 0;
-}
+
 .team-item-description {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -314,12 +309,21 @@ img {
 }
 
 /* -----------------our-projects section----------------------- */
+.filter-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-btn {
   display: inline-block;
   padding: 6px 22px;
-  font-family: inherit;
   min-width: 73px;
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -340,7 +344,24 @@ img {
   color: var(--primary-title-color);
   background-color: var(--accent-color);
 }
+
+.our-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.our-projects-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.our-projects-description {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+}
 .our-projects-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
