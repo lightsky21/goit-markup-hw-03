@@ -41,6 +41,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -70,7 +71,8 @@ img {
 }
 .logo-header {
   margin-right: 93px;
-
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--logo-header-color);
 }
 .logo-footer {
@@ -153,6 +155,9 @@ img {
   display: flex;
 }
 .header-contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -191,6 +196,8 @@ img {
 
 /* ------------------------hero---------------------- */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--footer-background-color);
 }
@@ -224,9 +231,6 @@ img {
 
 /* -------------------peculiarities section---------------- */
 
-.peculiarities {
-  padding-bottom: 0;
-}
 .peculiarities-list {
   display: flex;
 }
@@ -254,8 +258,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-/* ---------------our-business-title sectin-------------------- */
-
+/* ---------------our-business-title secti0n-------------------- */
+.our-business {
+  padding-top: 0;
+}
 .our-business-title,
 .team-title {
   margin-bottom: 50px;
@@ -359,6 +365,8 @@ img {
 .our-projects-description {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .our-projects-title {
   margin-bottom: 4px;
