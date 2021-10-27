@@ -195,6 +195,10 @@ img {
 }
 
 /* ------------------------hero---------------------- */
+.hero > .container {
+  width: 696px;
+}
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
